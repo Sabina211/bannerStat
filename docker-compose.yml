@@ -35,4 +35,4 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
     volumes:
-      - ./img:/app/img
+      - ./NoruBanner.Api/img:/app/img
