@@ -75,8 +75,9 @@ namespace NoruBanner.Api.Services
 
         private byte[] ReadAllBytes(string fileName)
         {
+            var fullPath = Path.Combine("img", fileName);
             byte[] buffer = null;
-            using (FileStream fs = new FileStream(fileName, FileMode.Open, FileAccess.Read))
+            using (FileStream fs = new FileStream(fullPath, FileMode.Open, FileAccess.Read))
             {
                 buffer = new byte[fs.Length];
                 fs.Read(buffer, 0, (int)fs.Length);
