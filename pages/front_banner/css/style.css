@@ -1,0 +1,131 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 20px 20px;
+	font-family: 'Arial', Verdana, sans-serif;
+}
+
+.page-container {
+	max-width: 1170px;
+	min-width: 370px;
+	margin: 0 auto;
+}
+
+.page-container {
+	max-width: 730px;
+	margin: 0 auto;
+}
+
+.main-title {
+	margin: 0;
+	max-width: 100%;
+	margin-bottom: 30px;
+	padding: 0 0px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    color: #0d0d0d
+}
+
+.text {
+	margin: 0;
+	margin-bottom: 30px;
+	max-width: 100%;
+	font-size: 20px;
+	line-height: 160%;
+	color: #333;
+}
+
+.text:last-child {
+	margin-bottom: 0;
+}
+
+.text a {
+	color: #3f2aff;
+}
+
+.quote-text {
+	max-width: 900px;
+	background-color: #EBEBEB;
+	padding: 25px 120px;
+}
+
+.quote {
+	font-weight: 700;
+}
+
+.quote-author {
+	font-style: normal;
+}
+
+.image-group {
+	margin: 0;
+	margin-bottom: 60px;
+	width: 100%;
+}
+
+.image-group-text {
+	padding: 12px;
+	font-size: 14px;
+	color: #8a8a8a;
+	line-height: 20px;
+}
+
+.second-title {
+	margin: 0;
+	margin-bottom: 10px;
+	color: #333;
+	font-size: 40px;
+}
+
+.list {
+	font-size: 20px;
+}
+
+.list-item {
+	line-height: 240%;
+}
+
+.table {
+	margin-bottom: 60px;
+	border: 1px solid #c4c4c4;
+	border-collapse: collapse;
+	font-size: 20px;
+	width: 100%;
+}
+
+.table td,
+.table th {
+	vertical-align: top;
+	text-align: left;
+	padding: 30px;
+	border: 1px solid #c4c4c4;
+}
+
+.table th {
+	color: #3f2aff;
+}
+
+.table caption {
+	text-align: left;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.table pre {
+	margin: 0;
+	white-space: pre-line;
+}

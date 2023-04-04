@@ -1,0 +1,36 @@
+version: '3.4'
+
+services:
+  nginx:
+    container_name: noru-banner-nginx
+    image: nginx:stable-alpine3.17
+    env_file: .env
+    volumes:
+      - ./pages:/var/www/noru-pages
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+    ports:
+      - 90:80
+      - 443:443
+
+  postgres:
+    container_name: postgres
+    image: postgres:15.0
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - 5432:5432 
+    volumes:
+      - ./data:/var/lib/postgresql
+
+  noru-banner-api:
+    container_name: noru-banner-api
+    build:
+      context: .
+      dockerfile: NoruBanner.Api/Dockerfile
+    image: noru-banner-image
+    env_file: .env
+    restart: unless-stopped
+    ports:
+      - 85:80
+      - 86:443
