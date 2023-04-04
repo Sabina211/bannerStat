@@ -31,6 +31,6 @@ services:
     image: noru-banner-image
     env_file: .env
     restart: unless-stopped
-    ports:
-      - 85:80
-      - 86:443
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
