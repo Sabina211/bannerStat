@@ -22,11 +22,11 @@
 docker-compose build
 ```
 ```bash
-docker-compose up -d 
+docker-compose -p banner -f docker-compose.yml up -d 
 ```
 docker-compose up -d  - запускает контейнеры в фоновом режиме и оставляет их работать   
 Теперь сваггер доступен по адресу https://sark.ws/swagger/index.html  
 
 ## Примечание
-Должны быть свободными 90 и 443 порты
+Должны быть свободными 90 и 443 порты   
 Нужно отключить блокировщики рекламы
